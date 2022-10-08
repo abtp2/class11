@@ -7,21 +7,24 @@
 				<link rel="stylesheet" href="icon.css">
 				<title>11th-Science</title>
 </head>
-<body>
+<body class="details">
 <!-- details -->				
-<div id="details">
+<div id="details" class="">
+<div class="sec-drop" id="sec-drop1"></div>
+<div class="sec-drop" id="sec-drop3"></div>
 	<h1>CLASS - 11TH SCIENCE</h1>		
-	<form action="https://formsubmit.co/netraballabhpandey@gmail.com" method="POST">
-		<input type="text" placeholder="Full Name" name="Name">
+	<form action="https://getform.io/f/d4c94aa6-e495-4c17-830b-aea93168b887" method="POST" enctype="multipart/form-data" id="details-form">
+		<input type="text" placeholder="Full Name" name="Name" title="Please write your name" required>
 		<input type="url" placeholder="Instagram ID (Optional)" name="Instagram ID">
 		<input type="url" placeholder="YouTube Channel (Optional)" name="YouTube Channel">
 		<input type="url" placeholder="Telegram ID (Optional)" name="Telegram ID">
 		<input type="url" placeholder="Other Link (Optional)" name="Other link">
-		<textarea placeholder="About Yourself" name="About Myself"></textarea>
-		<input type="file" name="attachment" accept="image/png, image/jpeg">
+		<textarea placeholder="About Yourself" name="About Myself" title="Please write about yourself" required></textarea>
+		<input type="file" accept="image/*" name="file" id="i-upload" required>
+		<span id="b-upload">Upload Your Image<i class="rc-icon">upload</i><b class="rc-icon" id="i-upload-done">done</b></span>
 		<div>
-			 <input type="reset">
-			 <input type="submit">
+			 <input type="reset" id="details-reset">
+			 <input type="submit" id="details-submit">
 		</div>
 	</form>
 </div>				

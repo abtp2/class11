@@ -2,7 +2,7 @@
 window.onload = function(){
 var x = localStorage.getItem("mode");
 var y = document.getElementById("toggler");
-
+document.getElementById("details-reset").click();
 
 if(x == 1){
 document.body.classList.add("light-theme");
@@ -117,3 +117,35 @@ document.body.classList.remove("side-blur");
 document.body.classList.remove("point");
 document.getElementById("one").scrollTo(0,0);
 }
+
+
+
+
+/* details image input button */
+document.getElementById("b-upload").onclick = function(){
+document.getElementById("i-upload").click();				
+}
+/* details image input validation */
+document.getElementById("details-submit").onclick = function(){
+var x = document.getElementById("i-upload"); 
+if(x.value ==""){
+event.preventDefault();
+alert("Please select image for DP");			
+}		
+}
+/* details image input validation2 */
+setInterval(function valli(){
+var x = document.getElementById("i-upload"); 
+var y = document.getElementById("i-upload-done");
+if(x.value ==""){
+y.style.display ="none";
+}						
+else{
+y.style.display ="block";
+}
+},500);
+
+
+
+
+
