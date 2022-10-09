@@ -3,6 +3,8 @@ window.onload = function(){
 var x = localStorage.getItem("mode");
 var y = document.getElementById("toggler");
 document.getElementById("details-reset").click();
+document.getElementById("loader").style.top ="-100%";
+document.body.classList.remove("loader");
 
 if(x == 1){
 document.body.classList.add("light-theme");

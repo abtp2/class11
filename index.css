@@ -50,9 +50,72 @@ opacity: 0.1;
 .details > *:not(#details){ 
 visibility: hidden;
 }
+.loader > *:not(#loader){ 
+visibility: hidden;
+}
 .none{
 display: none !important;
 }
+
+
+
+/* preloader */
+#loader{
+width: 100%;
+height: 100vh;
+pointer-events: none;
+position: fixed;
+z-index: 9999999999999;
+top: 0;
+left: 0;
+background: var(--bg);
+display: flex; 
+align-items: center;
+justify-content: center;
+transition: top 0.3s;
+}
+
+#load-music{
+height: 100%;
+display: flex; 
+align-items: center;
+}
+
+#load-music div{
+width: 8px;
+height: 10px;
+border-radius: 10px;
+background: var(--font);
+margin-left: 0.3rem;
+animation-name: music;
+animation-timing-function: linear;
+animation-duration: 0.7s;
+animation-iteration-count: infinite;
+}
+
+#load-one{
+animation-delay: 0s;
+}
+#load-two{
+animation-delay: 0.1s;
+}
+#load-three{
+animation-delay: 0.3s;
+}
+#load-four{
+animation-delay: 0.2s;
+}
+
+
+@keyframes music{
+0%,100%{
+height: 8px;
+}				
+50%{
+height: 50px;
+}
+}
+
 
 
 
@@ -640,3 +703,18 @@ transform: translate(-50%,-50%) scale(0.8);
 height: 400px;
 }		
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
