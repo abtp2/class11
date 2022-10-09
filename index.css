@@ -42,6 +42,11 @@ filter: blur(2px);
 .point > *:not(#sidebar){ 
 pointer-events: none;
 }
+.chat > *:not(#chat,#chat-close){ 
+pointer-events: none;
+filter: blur(2px);
+opacity: 0.1;
+}
 .details > *:not(#details){ 
 visibility: hidden;
 }
@@ -596,3 +601,42 @@ padding: 2rem 3rem;
 
 
 
+/* chat box */
+#chat{
+position: fixed;
+z-index: 99999;
+border-radius: 6px;
+transform: translate(-50%,-50%);
+top: 52%;
+left: 50%;
+display: none;
+width: 90%;
+height: 550px;
+border: 5px double var(--blurfont);
+background: #fff;
+padding: 8px 2px 0 2px;
+}
+#chat-close{
+width: 45px;
+height: 45px;
+font-size: 25px;
+font-weight: 700;
+display: none; 
+align-items: center;
+justify-content: center;
+position: fixed;
+z-index: 99999;
+top: 1.2rem;
+right: 1.2rem;
+background: var(--font);
+color: var(--bg);
+border-radius: 100%; 
+border: 2px solid var(--blurfont);
+}
+
+@media(max-height:666px){
+#chat{
+transform: translate(-50%,-50%) scale(0.8);
+height: 400px;
+}		
+}

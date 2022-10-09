@@ -149,3 +149,22 @@ y.style.display ="block";
 
 
 
+/* chat toggle */
+document.getElementById("chat-toggle").onclick = function(){
+var x = document.getElementById("sidebar");
+x.style.left ="-100%";		
+document.body.classList.remove("side-blur");
+document.body.classList.remove("point");
+document.getElementById("chat").style.display ="block";			
+document.getElementById("chat-close").style.display ="flex";				
+document.body.classList.add("chat");
+document.querySelector('a[href*="#one"]').click();
+}
+
+/* chat-close */
+document.getElementById("chat-close").onclick = function(){
+document.getElementById("chat").style.display ="none";					
+document.getElementById("chat-close").style.display ="none";
+document.body.classList.remove("chat");
+}
+
