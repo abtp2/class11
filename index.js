@@ -3,8 +3,6 @@ window.onload = function(){
 var x = localStorage.getItem("mode");
 var y = document.getElementById("toggler");
 document.getElementById("details-reset").click();
-document.getElementById("loader").style.top ="-100%";
-document.body.classList.remove("loader");
 
 if(x == 1){
 document.body.classList.add("light-theme");
@@ -43,6 +41,12 @@ document.body.classList.remove("dark-theme");
 localStorage.setItem("mode", 1);
 }				
 }
+
+/* preloader */
+setTimeout(function pra(){
+document.getElementById("loader").style.top ="-200%";
+document.body.classList.remove("loader");				
+},5000);
 
 
 /* opening menu */
@@ -170,3 +174,195 @@ document.getElementById("chat-close").style.display ="none";
 document.body.classList.remove("chat");
 }
 
+
+
+
+
+
+/* dropdown */
+document.getElementById("drop-more-one").onclick = function(){
+var a = document.getElementById("drop-one")	;
+var b = document.getElementById("drop-two")	;
+var c = document.getElementById("drop-three");
+var d = document.getElementById("drop-four")	;
+var e = document.getElementById("drop-five")	;
+
+var o = document.getElementById("drop-more-one");
+var t = document.getElementById("drop-more-two");
+var th = document.getElementById("drop-more-three");
+var f = document.getElementById("drop-more-four");
+var fi = document.getElementById("drop-more-five");
+
+
+if(a.style.height =="130px"){
+a.style.height ="50px";				
+o.style.transform ="none"; 
+}
+else{
+a.style.height ="130px";		
+b.style.height ="50px";	
+c.style.height ="50px";	
+d.style.height ="50px";	
+e.style.height ="50px";	
+
+o.style.transform ="rotate(180deg)";
+t.style.transform ="none";
+th.style.transform ="none";		
+f.style.transform ="none";
+fi.style.transform ="none";		
+}			
+}
+
+
+
+
+
+
+
+document.getElementById("drop-more-two").onclick = function(){
+var a = document.getElementById("drop-one")	;
+var b = document.getElementById("drop-two")	;
+var c = document.getElementById("drop-three");
+var d = document.getElementById("drop-four")	;
+var e = document.getElementById("drop-five")	;
+
+var o = document.getElementById("drop-more-one");
+var t = document.getElementById("drop-more-two");
+var th = document.getElementById("drop-more-three");
+var f = document.getElementById("drop-more-four");
+var fi = document.getElementById("drop-more-five");
+
+
+if(b.style.height =="130px"){
+b.style.height ="50px";				
+t.style.transform ="none"; 
+}
+else{
+b.style.height ="130px";		
+a.style.height ="50px";	
+c.style.height ="50px";	
+d.style.height ="50px";	
+e.style.height ="50px";	
+
+t.style.transform ="rotate(180deg)";
+o.style.transform ="none";
+th.style.transform ="none";		
+f.style.transform ="none";
+fi.style.transform ="none";		
+}			
+}
+
+
+
+
+
+
+document.getElementById("drop-more-three").onclick = function(){
+var a = document.getElementById("drop-one")	;
+var b = document.getElementById("drop-two")	;
+var c = document.getElementById("drop-three");
+var d = document.getElementById("drop-four")	;
+var e = document.getElementById("drop-five")	;
+
+var o = document.getElementById("drop-more-one");
+var t = document.getElementById("drop-more-two");
+var th = document.getElementById("drop-more-three");
+var f = document.getElementById("drop-more-four");
+var fi = document.getElementById("drop-more-five");
+
+
+if(c.style.height =="130px"){
+c.style.height ="50px";				
+th.style.transform ="none"; 
+}
+else{
+c.style.height ="130px";		
+b.style.height ="50px";	
+a.style.height ="50px";	
+d.style.height ="50px";	
+e.style.height ="50px";	
+
+th.style.transform ="rotate(180deg)";
+t.style.transform ="none";
+o.style.transform ="none";		
+f.style.transform ="none";
+fi.style.transform ="none";		
+}			
+}
+
+
+
+
+
+document.getElementById("drop-more-four").onclick = function(){
+var a = document.getElementById("drop-one")	;
+var b = document.getElementById("drop-two")	;
+var c = document.getElementById("drop-three");
+var d = document.getElementById("drop-four")	;
+var e = document.getElementById("drop-five")	;
+
+var o = document.getElementById("drop-more-one");
+var t = document.getElementById("drop-more-two");
+var th = document.getElementById("drop-more-three");
+var f = document.getElementById("drop-more-four");
+var fi = document.getElementById("drop-more-five");
+
+
+if(d.style.height =="130px"){
+d.style.height ="50px";				
+f.style.transform ="none"; 
+}
+else{
+d.style.height ="130px";		
+b.style.height ="50px";	
+c.style.height ="50px";	
+a.style.height ="50px";	
+e.style.height ="50px";	
+
+f.style.transform ="rotate(180deg)";
+t.style.transform ="none";
+th.style.transform ="none";		
+o.style.transform ="none";
+fi.style.transform ="none";		
+}			
+}
+
+
+
+
+
+document.getElementById("drop-more-five").onclick = function(){
+var a = document.getElementById("drop-one")	;
+var b = document.getElementById("drop-two")	;
+var c = document.getElementById("drop-three");
+var d = document.getElementById("drop-four")	;
+var e = document.getElementById("drop-five")	;
+
+var o = document.getElementById("drop-more-one");
+var t = document.getElementById("drop-more-two");
+var th = document.getElementById("drop-more-three");
+var f = document.getElementById("drop-more-four");
+var fi = document.getElementById("drop-more-five");
+
+
+if(e.style.height =="130px"){
+e.style.height ="50px";				
+fi.style.transform ="none"; 
+}
+else{
+e.style.height ="130px";		
+b.style.height ="50px";	
+c.style.height ="50px";	
+d.style.height ="50px";	
+a.style.height ="50px";	
+
+fi.style.transform ="rotate(180deg)";
+t.style.transform ="none";
+th.style.transform ="none";		
+f.style.transform ="none";
+o.style.transform ="none";		
+}			
+}
+
+
+/* finally, dropdown ended*/

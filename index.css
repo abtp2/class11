@@ -58,7 +58,6 @@ display: none !important;
 }
 
 
-
 /* preloader */
 #loader{
 width: 100%;
@@ -68,11 +67,11 @@ position: fixed;
 z-index: 9999999999999;
 top: 0;
 left: 0;
-background: var(--bg);
+background: #11151f;
 display: flex; 
 align-items: center;
 justify-content: center;
-transition: top 0.3s;
+transition:all 3s;
 }
 
 #load-music{
@@ -85,7 +84,7 @@ align-items: center;
 width: 8px;
 height: 10px;
 border-radius: 10px;
-background: var(--font);
+background: #f5f8ff;
 margin-left: 0.3rem;
 animation-name: music;
 animation-timing-function: linear;
@@ -490,6 +489,78 @@ opacity: 0.95;
 }
 
 
+
+
+
+
+
+#one-third{
+margin-top: 10rem;
+}
+#one-third h2{
+font-size: 32px;
+color: var(--font);
+text-align: left;
+padding: 0 10%;
+font-weight: 900;
+font-family: Arial;
+line-height: 1.35;
+opacity: 0.9;
+}
+#one-third h2 span{
+background: -webkit-linear-gradient(45deg, #4740ff, #f880ff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+#one-third #dropdown{
+width: 90%;
+background: var(--bg);
+box-shadow: 2px 0px 5px #818181;
+border-radius: 6px;
+margin: 2rem auto 2rem auto;
+}
+#one-third #dropdown div{
+width: 100%;
+overflow: hidden;
+height: 50px;
+border-bottom: 0.1px solid var(--blurfont);
+transition: 0.3s;
+}
+#one-third #dropdown div h4{
+width: 100%;
+background: var(--rgba);
+text-align: left;
+font-size: 16px;
+font-weight: 400;
+height: 50px;
+padding: 0 1rem;
+color: var(--font);
+opacity: 0.85;
+display: flex; 
+align-items: center;
+}
+#one-third #dropdown div h4 i{
+margin-left: auto;
+margin-right: 0;
+font-size: 32px;
+font-weight: 401;
+transition: 0.3s;
+}
+#one-third #dropdown div p{
+font-size: 15px;
+font-weight: 400;
+padding:0.5rem 1rem !important;
+text-align: left;
+margin: 0 !important;
+line-height: 1.4;
+}
+
+
+
+
+
 @media(min-width:800px){
 section{
 padding: 0 5%;
@@ -506,11 +577,17 @@ text-align: center;
 #one #one-buts{
 width: 40%;
 }
+#one-third #dropdown{
+width: 70%;
+}
 }
 @media(min-width:992px){
 #one #one-buts{
 width: 30%;
 }				
+#one-third #dropdown{
+width: 60%;
+}
 }
 
 
@@ -696,6 +773,7 @@ color: var(--bg);
 border-radius: 100%; 
 border: 2px solid var(--blurfont);
 }
+
 
 @media(max-height:666px){
 #chat{
