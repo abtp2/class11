@@ -3,6 +3,9 @@ window.onload = function(){
 var x = localStorage.getItem("mode");
 var y = document.getElementById("toggler");
 document.getElementById("details-reset").click();
+document.getElementById("loader").style.top ="-200%";
+document.body.classList.remove("loader");				
+
 
 if(x == 1){
 document.body.classList.add("light-theme");
@@ -42,11 +45,10 @@ localStorage.setItem("mode", 1);
 }				
 }
 
-/* preloader */
+/* preloader 
 setTimeout(function pra(){
-document.getElementById("loader").style.top ="-200%";
-document.body.classList.remove("loader");				
-},5000);
+
+},5000); */
 
 
 /* opening menu */
@@ -366,3 +368,26 @@ o.style.transform ="none";
 
 
 /* finally, dropdown ended*/
+
+
+
+
+/* add yourself */
+document.getElementById("add-yourself").onclick = function(){
+var x = document.getElementById("sidebar");
+x.style.left ="-100%";		
+document.body.classList.remove("side-blur");
+document.body.classList.remove("point");
+document.getElementById("details").style.display ="block";				
+}
+/* closing details */
+document.getElementById("details-close").onclick = function(){
+document.getElementById("details").style.display ="none";				
+}
+/* closing details on submitting form */
+document.getElementById("details-form").onsubmit = function(){
+document.getElementById("details").style.display ="none";					
+alert("Thank you for submitting the details \n We will try add you as soon as possible.");
+}
+
+
