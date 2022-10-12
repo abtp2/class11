@@ -100,6 +100,7 @@ let height = sec.offsetHeight;
 
 let id = sec.getAttribute('id');
 
+
 if(top >= offset && top < offset + height){
 
 navLinks.forEach(links =>{
@@ -389,5 +390,7 @@ document.getElementById("details-form").onsubmit = function(){
 document.getElementById("details").style.display ="none";					
 alert("Thank you for submitting the details \n We will try add you as soon as possible.");
 }
+
+
 
 
