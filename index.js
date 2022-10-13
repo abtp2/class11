@@ -169,6 +169,16 @@ document.getElementById("chat-close").style.display ="flex";
 document.body.classList.add("chat");
 document.querySelector('a[href*="#one"]').click();
 }
+/* chat toggle2 */
+document.getElementById("chat-toggle2").onclick = function(){
+document.getElementById("chat").style.display ="block";			
+document.getElementById("chat-close").style.display ="flex";				
+document.body.classList.add("chat");
+document.querySelector('a[href*="#one"]').click();
+}
+
+
+
 
 /* chat-close */
 document.getElementById("chat-close").onclick = function(){
