@@ -391,6 +391,12 @@ document.body.classList.remove("side-blur");
 document.body.classList.remove("point");
 document.getElementById("details").style.display ="block";				
 }
+/* add yourself2 */
+document.getElementById("add-yourself2").onclick = function(){
+document.getElementById("details").style.display ="block";				
+}
+
+
 /* closing details */
 document.getElementById("details-close").onclick = function(){
 document.getElementById("details").style.display ="none";				
