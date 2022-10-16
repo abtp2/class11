@@ -128,6 +128,7 @@ position: fixed;
 z-index: 9999;
 background: var(--bg);
 display: none;
+overflow: scroll;
 }
 #details-close{
 font-weight: 600;
@@ -164,14 +165,26 @@ justify-content: center;
 padding: 1rem 0;
 position: absolute;
 transform: translate(-50%,-50%);
-top: 48%;
+top: 52%;
 left: 50%;
 }
 @media(max-height:666px){
 #details form{
-transform: translate(-50%,-50%) scale(0.9);
+transform: translate(-50%,-50%) scaleY(0.9);
 }				
 }
+@media(max-height:610px){
+#details form{
+transform: translate(-50%,-50%) scaleY(0.85);
+}				
+}
+@media(max-height:580px){
+#details form{
+transform: translate(-50%,-50%) scaleY(0.8);
+}				
+}
+
+
 @media(min-width:992px){
 #details form{
 transform: translate(-50%,-50%) scale(0.9);
