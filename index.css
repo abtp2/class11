@@ -544,7 +544,7 @@ background: -webkit-linear-gradient(45deg, #4740ff, #f880ff);
 #one-third #dropdown{
 width: 90%;
 background: var(--bg);
-box-shadow: 2px 0px 5px #818181;
+box-shadow: 2px 0px 5px #181818;
 border-radius: 6px;
 margin: 2rem auto 2rem auto;
 }
